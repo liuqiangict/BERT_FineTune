@@ -1,0 +1,24 @@
+{
+  "input_mode":"mstf", 
+  "dim_xletter_emb":288,
+
+  "bleu_eval":true,
+  "metrics_early_stop":"bleu",
+  
+  "decoder_vocab_file": "vocab100000.txt",
+  "decoder_vocab_size": 200003,
+  "training_with_weight": 0,
+  "predict_with_constrain":0,
+  "dim_attention" : 64,
+  "dim_decoder_emb": 128,
+  "dim_hidden": 64,
+  "length_penalty_weight": 0,
+  "coverage_penalty_weight": 0,
+  "decoder_max_iter":10,
+  "move":"decoder_vocab_file:1",
+  "train_header":"query:xletter,doc",
+  "eval_bleu_header":"query:xletter,doc",
+  "train_filename":"",
+  "eval_bleu_filename":"bleu_data.txt"
+}
+

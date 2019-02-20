@@ -1,0 +1,19 @@
+{
+  "move":"bert_vocab_file:0,decoder_vocab_file:1",
+  "auc_eval":true,
+  "bleu_eval":true,
+  "metrics_early_stop":"auc",
+
+  "train_batch_size":64,
+  "train_filename":"",
+  "train_header":"query,doc",
+  
+  "eval_auc_batch_size":64,
+  "eval_auc_filename":"/label_data.txt",
+  "eval_auc_header":"query,doc,label",
+  
+  "eval_bleu_batch_size":64,
+  "eval_bleu_filename":"/bleu_data.txt",
+  "eval_bleu_header":"query,doc"
+  
+}

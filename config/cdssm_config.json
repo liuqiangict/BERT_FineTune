@@ -1,0 +1,19 @@
+{
+  "input_mode":"mstf", 
+  "maxpool_mode":"mstf",
+  "dim_xletter_emb":288,
+  "dim_hidden_layers":"64",
+  "negative_sample":4,
+  "softmax_gamma":10,
+
+  "auc_eval":true,
+  "metrics_early_stop":"auc",
+
+  "train_batch_size":128,
+  "train_filename":"",
+  "train_header":"query,doc",
+  
+  "eval_auc_batch_size":64,
+  "eval_auc_filename":"/label_data.txt",
+  "eval_auc_header":"query,doc,label"
+}

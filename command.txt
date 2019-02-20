@@ -1,0 +1,6 @@
+bert2seq_infer: --local 2 --mode infer --input_previous_model_path '../Model/bert2seq_baseline_15epochs_0.42' --input_validation_data_path '../Data/Test/' --infer_filename '/bert2seq_baseline.txt' --infer_header 'query:bertseq,doc,candbase,candscore' --result_header 'query,doc,candbase,candscore' --bert2seq_cfg "dim_decoder_emb:128,beam_width:5,decoder_max_iter:20,length_penalty_factor:1.0"
+
+bert2seq_train: --local 2 --modeltype bert2seq --optimizer_type adam
+--log_frequency 10
+
+xletter2seq_train: --local 2 --modeltype xletter2seq --log_frequency 10 
